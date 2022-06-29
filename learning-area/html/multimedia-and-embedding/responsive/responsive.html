@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive HTML images demo</title>
+ 
+  </head>
+  <body>
+        <h1>My website</h1>
+
+        <p>Hi</p>
+
+<picture>
+<source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+<source media="min-width: 800px" srcset="elva-800w.jpg">
+<img src="elva-800w.jpg" alt="Apple">
+</picture>
+
+        <p>Bye</p>
+
+<img srcset="elva-480w-close-portrait.jpg 480w, elva-800w.jpg 800w"
+sizes="(max-width: 600px) 480px, 800px"
+src="elva-800w.jpg" alt="Apple">
+
+  </body>
+</html>
